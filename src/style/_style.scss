@@ -16,14 +16,14 @@
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Mulish';
+  font-weight: 300;
+  background-color: $back;
+  color: $main;
+  line-height: 1.4;
   font-size: 16px;
-  color: #000;
-  background-color: #fff;
 }
 
 
@@ -31,13 +31,9 @@ img,
 svg {
   display: block;
   max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
-
-svg {
-  max-height: 100%;
-}
-
 
 button {
   padding: 0;
@@ -70,26 +66,34 @@ iframe {
   border: none;
 }
 
-/*
-Доступно скрываю элементы
-*/
-
 .visually-hidden {
   position: fixed;
   transform: scale(0);
 }
 
-
-/*
-Пример контейнера
-
-Если контейнер 1180px по макету,
-то для max-width прибавляем паддинги 30px*2, 
-в итоге 1240px
-Чтобы контент не прижимался к краям экрана
-*/
-
 .container {
-  padding: 0 30px;
+  padding: 0 16px;
   margin: 0 auto;
+}
+
+.link-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 20px;
+  font-weight: 1000;
+  font-size: 16px;
+  line-height: 1;
+  color: $back;
+  background: $second;
+  border-radius: 80px;
+
+
+  &:after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/arrow-right.svg');
+  }
 }
