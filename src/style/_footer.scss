@@ -1,0 +1,36 @@
+.footer {
+
+    &-container {
+        margin-top: 60px;
+
+    }
+
+    &-logo {
+        width: 200px;
+        height: auto;
+    }
+
+    &-social-list {
+        display: flex;
+        margin-top: 32px;
+        gap: 16px;
+        flex-direction: row;
+    }
+
+    &-social-item {
+        width: 36px;
+        height: auto;
+    }
+
+    &-developers {
+        display: flex;
+        flex-direction: column;
+        margin-top: 52px;
+        margin-bottom: 52px;
+        gap: 19px;
+    }
+
+    &-developer {}
+
+    &-copyright {}
+}
