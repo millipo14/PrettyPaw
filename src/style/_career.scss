@@ -1,0 +1,122 @@
+.career {
+    padding-top: 80px;
+
+    @include lg {
+        padding-top: 100px;
+    }
+
+    &-content {
+        @include md {
+            display: grid;
+            grid-template-columns: 1fr min-content;
+            grid-template-rows: auto auto 1fr;
+            grid-template-areas:
+                'title link'
+                'description .';
+        }
+    }
+
+    &-title {
+        font-size: 32px;
+        font-weight: 1000;
+        color: $second;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        line-height: 1;
+
+        @include md {
+            grid-area: title;
+        }
+
+        @include lg {
+            font-size: 52px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-decription {
+        margin-bottom: 24px;
+
+        @include md {
+            grid-area: description;
+            margin-bottom: 40px;
+        }
+    }
+
+    &-link {
+        margin-bottom: 40px;
+
+        @include md {
+            grid-area: link;
+        }
+    }
+
+    &-picture {
+        @include md {
+            grid-area: slider;
+        }
+    }
+
+    &-image {
+        border-radius: 16px;
+    }
+
+    &-slider {
+        width: 100%;
+
+        .swiper-wrapper {
+            align-items: center;
+        }
+
+        .swiper-slide {
+            width: 60%; // Боковые слайды больше
+            transition: all 0.3s ease;
+            opacity: 0.7;
+            transform: scale(0.9);
+
+            &-active {
+                width: 40%; // Центральный слайд меньше
+                opacity: 1;
+                transform: scale(1);
+                z-index: 2;
+            }
+
+            &-prev,
+            &-next {
+                width: 60%; // Боковые слайды больше
+                opacity: 0.8;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    &-image {
+        border-radius: 16px;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+}
+
+// Адаптация для мобильных
+@include sm {
+    .career {
+        &-slider {
+            .swiper-slide {
+                width: 70%;
+
+                &-active {
+                    width: 50%;
+                }
+
+                &-prev,
+                &-next {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+
+
+}

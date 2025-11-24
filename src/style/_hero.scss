@@ -38,9 +38,12 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-
+        @include lg {
+                padding-bottom: 74px;
+            }
         @include xl {
             min-height: 780px;
+            padding-bottom: 100px;
         }
 
         @include xxl {
@@ -76,10 +79,6 @@
         color: $second;
 
         @include lg {
-            font-size: 40px;
-        }
-
-        @include xl {
             font-size: 40px;
         }
 
