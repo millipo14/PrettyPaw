@@ -16,19 +16,19 @@
       <img src="./img/logo.svg" alt="Оранжевый логотип зоосада Pretty Paw" class="header-logo">
       <nav class="header-nav navigation">
         <ul class="navigation-list">
-          <li class="navigation-list">
+          <li class="navigation-item">
             <a href="./index.html" class="navigation-link">Главная </a>
           </li>
-          <li class="navigation-list">
+          <li class="navigation-item">
             <a href="#about" class="navigation-link">О&nbsp;зоосаде</a>
           </li>
-          <li class="navigation-list">
+          <li class="navigation-item">
             <a href="#history" class="navigation-link">История</a>
           </li>
-          <li class="navigation-list">
+          <li class="navigation-item">
             <a href="#deeds" class="navigation-link">Добрые&nbsp;дела</a>
           </li>
-          <li class="navigation-list">
+          <li class="navigation-item">
             <a href="#career" class="navigation-link">Карьера</a>
           </li>
         </ul>
@@ -45,7 +45,7 @@
         </h1>
         <p class="hero-subtitle">С&nbsp;заботой о&nbsp;животных</p>
       </div>
-      <video class="hero_video-bg video-bg" loading="lazy" autoplay loop muted></video>
+      <video class="hero_video-bg video-bg" loading="lazy" autoplay loop muted playsinline></video>
     </section>
     <section class="about">
       <div class="container about-container">
@@ -147,60 +147,61 @@
     <section class="location">
       <h2 class="visually-hidden">Локации зоопарка</h2>
       <ul class="location-list">
-        <li class="location-item">
+        <li class="location-item location-item_mammals">
           <h3 class="location-title">
             Млекопитающие
           </h3>
-          <p class="location description">
+          <p class="location-description">
             В&nbsp;эту группу входят животные, которые питаются молоком в&nbsp;раннем возрасте и&nbsp;обладают
             механизмом регуляции
             телевой температуры. В&nbsp;нашем зоосаде можно увидеть млекопитающих, таких как львы, тигры, слоны
             и&nbsp;обезьяны.
           </p>
         </li>
-        <li class="location-item">
+        <li class="location-item location-item_birds">
           <h3 class="location-title">
             Птицы
           </h3>
-          <p class="location description">
+          <p class="location-description">
             Эта группа включает в&nbsp;себя разнообразных пернатых обитателей зоопарка, от&nbsp;маленьких певчих птиц
             до&nbsp;больших драпированных птиц хищников. В&nbsp;нашем зоосаде можно увидеть таких птиц, как фламинго,
             аисты, орлы
             и&nbsp;павлины.
           </p>
         </li>
-        <li class="location-item">
+        <li class="location-item location-item_reptiles">
           <h3 class="location-title">
             Рептилии
           </h3>
-          <p class="location description">
+          <p class="location-description">
             В&nbsp;эту группу входят животные, которые имеют чешуйчатую кожу и&nbsp;обладают приспособлениями для жизни
             на&nbsp;суше
             или в&nbsp;воде. В&nbsp;нашем зоосаде можно увидеть таких рептилий, как крокодилы, змеи, черепахи
             и&nbsp;ящерицы.
           </p>
         </li>
-        <li class="location-item">
+        <li class="location-item location-item_water">
           <h3 class="location-title">
             Водный мир
           </h3>
-          <p class="location description">
+          <p class="location-description">
             В&nbsp;эту группу входят животные, которые живут в&nbsp;воде или зависят от&nbsp;воды для выживания.
             В&nbsp;нашем
             зоосаде можно увидеть разнообразных рыб, дельфинов, китов, акул и&nbsp;других водных животных.
           </p>
         </li>
-        <li class="location-item">
+        <li class="location-item location-item_insects">
           <h3 class="location-title">
             Насекомые
           </h3>
-          <p class="location description">
+          <p class="location-description">
             В&nbsp;эту группу входят разнообразные насекомые, такие как бабочки, жуки, муравьи и&nbsp;пчелы.
             В&nbsp;нашем зоосаде
             можно увидеть различных беспозвоночных и&nbsp;насекомых.
           </p>
         </li>
       </ul>
+      <video class="location-video-bg video-bg" loading="lazy" autoplay loop muted playsinline></video>
     </section>
     <section class="career">
       <div class="container career-container">
@@ -283,7 +284,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container footer-container">
       <img src="./img/logo-black.svg" alt="Логотип черного цвета pretty paw" class="footer-logo">
 

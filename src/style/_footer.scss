@@ -1,13 +1,30 @@
 .footer {
+    padding-bottom: 30px;
+    margin-top: 60px;
+
+    @include lg {
+        margin-top: 80px;
+    }
 
     &-container {
-        margin-top: 60px;
+        @include sm {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr max-content;
+        }
 
+        @include lg {
+            gap: 72px;
+        }
     }
 
     &-logo {
         width: 200px;
         height: auto;
+
+        @include lg {
+            width: 360px;
+        }
     }
 
     &-social-list {
@@ -15,12 +32,23 @@
         margin-top: 32px;
         gap: 16px;
         flex-direction: row;
+
+        @include sm {
+            margin-top: 0;
+            gap: 36px;
+        }
     }
 
-    &-social-item {
+    &-social-link {
+        display: block;
         width: 36px;
-        height: auto;
+
+        @include lg {
+            width: 50px;
+        }
     }
+
+    &-social-item {}
 
     &-developers {
         display: flex;
@@ -28,6 +56,13 @@
         margin-top: 52px;
         margin-bottom: 52px;
         gap: 19px;
+        line-height: 1;
+
+        @include sm {
+            order: 2;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 
     &-developer {}

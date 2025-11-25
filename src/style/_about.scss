@@ -11,15 +11,25 @@
             display: grid;
             grid-template-columns: 48% 1fr;
             gap: 40px 20px;
-            grid-template-areas: 'title title' 'slider content';
+            grid-template-areas:
+                'title title'
+                'slider content';
 
         }
 
         @include xl {
             gap: 40px 30px;
             grid-template-rows: min-content 1fr;
-            grid-template-areas: 'slider title' 'slider content';
+            grid-template-areas:
+                'slider title'
+                'slider content';
 
+        }
+    }
+
+    &-picture {
+        @include lg{
+            grid-area: slider;
         }
     }
 
@@ -121,10 +131,7 @@
         }
     }
 
- 
-
     &-image {
         border-radius: 16px;
     }
 }
- 
