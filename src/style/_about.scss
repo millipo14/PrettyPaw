@@ -28,7 +28,7 @@
     }
 
     &-picture {
-        @include lg{
+        @include lg {
             grid-area: slider;
         }
     }
@@ -77,6 +77,11 @@
 
         @include xl {
             gap: 60px;
+        }
+
+        @include xxl {
+            min-height: 600px;
+            height: min-content;
         }
     }
 

@@ -2,6 +2,8 @@
     position: relative;
 
     &-list {
+        position: relative;
+        z-index: 10;
         @include lg {
             display: flex;
             min-height: 552px;
@@ -15,7 +17,7 @@
 
         @include xxl {
             min-height: 100vh;
-            min-width: 2560px;
+            max-width: 2560px;
             margin: 0 auto;
         }
     }
@@ -71,6 +73,9 @@
             inset: 0;
             background-size: cover;
             background-position: center;
+            @include lg{
+                background-image: none;
+            }
         }
 
         &_mammals:before {
@@ -83,10 +88,10 @@
                 background-image: image-set(url('../img/mammals_tablet.webp') 1x, url('../img/mammals_tablet.jpg') 1x);
             }
 
-            @include lg {
-                background-image: url('../img/mammals_laptop.jpg');
-                background-image: image-set(url('../img/mammals_laptop.webp') 1x, url('../img/mammals_laptop.jpg') 1x);
-            }
+            // @include lg {
+            //     background-image: url('../img/mammals_laptop.jpg');
+            //     background-image: image-set(url('../img/mammals_laptop.webp') 1x, url('../img/mammals_laptop.jpg') 1x);
+            // }
         }
 
         &_birds:before {
@@ -98,10 +103,10 @@
                 background-image: image-set(url('../img/birds_tablet.webp') 1x, url('../img/birds_tablet.jpg') 1x);
             }
 
-            @include lg {
-                background-image: url('../img/birds_laptop.jpg');
-                background-image: image-set(url('../img/birds_laptop.webp') 1x, url('../img/birds_laptop.jpg') 1x);
-            }
+            // @include lg {
+            //     background-image: url('../img/birds_laptop.jpg');
+            //     background-image: image-set(url('../img/birds_laptop.webp') 1x, url('../img/birds_laptop.jpg') 1x);
+            // }
         }
 
         &_reptiles:before {
@@ -113,10 +118,10 @@
                 background-image: image-set(url('../img/reptiles_tablet.webp') 1x, url('../img/reptiles_tablet.jpg') 1x);
             }
 
-            @include lg {
-                background-image: url('../img/reptiles_laptop.jpg');
-                background-image: image-set(url('../img/reptiles_laptop.webp') 1x, url('../img/reptiles_laptop.jpg') 1x);
-            }
+            // @include lg {
+            //     background-image: url('../img/reptiles_laptop.jpg');
+            //     background-image: image-set(url('../img/reptiles_laptop.webp') 1x, url('../img/reptiles_laptop.jpg') 1x);
+            // }
         }
 
         &_water:before {
@@ -128,10 +133,10 @@
                 background-image: image-set(url('../img/water_tablet.webp') 1x, url('../img/water_tablet.jpg') 1x);
             }
 
-            @include lg {
-                background-image: url('../img/water_laptop.jpg');
-                background-image: image-set(url('../img/water_laptop.webp') 1x, url('../img/water_laptop.jpg') 1x);
-            }
+            // @include lg {
+            //     background-image: url('../img/water_laptop.jpg');
+            //     background-image: image-set(url('../img/water_laptop.webp') 1x, url('../img/water_laptop.jpg') 1x);
+            // }
         }
 
         &_insects:before {
@@ -143,10 +148,10 @@
                 background-image: image-set(url('../img/insects_tablet.webp') 1x, url('../img/insects_tablet.jpg') 1x);
             }
 
-            @include lg {
-                background-image: url('../img/insects_laptop.jpg');
-                background-image: image-set(url('../img/insects_laptop.webp') 1x, url('../img/insects_laptop.jpg') 1x);
-            }
+            // @include lg {
+            //     background-image: url('../img/insects_laptop.jpg');
+            //     background-image: image-set(url('../img/insects_laptop.webp') 1x, url('../img/insects_laptop.jpg') 1x);
+            // }
         }
     }
 
@@ -183,6 +188,10 @@
     }
 
     &-video-bg {
-        z-index: 10; 
+        display: none;
+        @include lg{
+            display: block;
+        }
+        z-index: 1; 
     }
 }
