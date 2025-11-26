@@ -63,6 +63,15 @@
         @include md {
             grid-area: link;
         }
+
+        &:hover {
+            color: $main;
+            transition: 0.3s ease;
+        }
+
+        &:focus {
+            border: 2px solid $back
+        }
     }
 
     &-picture {

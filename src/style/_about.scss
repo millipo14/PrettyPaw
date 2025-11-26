@@ -108,6 +108,15 @@
         @include lg {
             align-self: end;
         }
+
+        &:hover {
+            color: $main;
+            transition: 0.3s ease;
+        }
+
+        &:focus {
+            border: 2px solid $back
+        }
     }
 
     &-count-list {

@@ -5,9 +5,10 @@ import './index.scss';
 import { sliderInit } from './modules/sliders';
 import { sliderCareer } from './modules/sliders';
 import { videoBackgroundInit } from './modules/videoBackground';
+import { menuControl } from './modules/menuControl';
 
 videoBackgroundInit()
-
+menuControl()
 
 sliderInit('.about-slider', {
         pagination: {
