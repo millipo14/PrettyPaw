@@ -63,15 +63,6 @@
         @include md {
             grid-area: link;
         }
-
-        &:hover {
-            color: $main;
-            transition: 0.3s ease;
-        }
-
-        &:focus {
-            border: 2px solid $back
-        }
     }
 
     &-picture {
@@ -88,22 +79,26 @@
             display: flex;
             align-items: center;
 
+            @include sm {
+                width: 48%;
+            }
+
             @include md {
-                &:nth-child(odd) {
+                &_odd{
                     width: 35%;
                 }
 
-                &:nth-child(even) {
+                &_even {
                     width: 24%;
                 }
             }
 
             @include xl {
-                &:nth-child(odd) {
+                &_odd{
                     width: 27%;
                 }
 
-                &:nth-child(even) {
+                &_even {
                     width: 20%;
                 }
             }
@@ -113,7 +108,10 @@
     }
 
     &-slider {
-        overflow: visible;
+        @include md {
+            overflow: visible;
+        }
+
     }
 
 }

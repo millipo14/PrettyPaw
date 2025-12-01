@@ -1,0 +1,71 @@
+.page {
+
+    &-container {
+        &--main {
+            display: flex;
+            margin-top: 120px;
+
+            @include lg {
+                margin-top: 216px;
+            }
+        }
+    }
+
+    &-title {
+        line-height: 1;
+        font-weight: 1000;
+        font-size: 32px;
+        color: $second;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+
+        @include md {
+            margin-bottom: 32px;
+        }
+
+        @include lg {
+            font-size: 52px;
+            margin-bottom: 40px;
+        }
+
+        @include xl {
+            margin-bottom: 38px;
+        }
+    }
+
+    &-description {}
+
+    &-gallery {
+        margin-top: 40px;
+        border-radius: 16px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 30px;
+        }
+
+        @include md {
+            &:first-of-type {
+                margin-top: 32px;
+            }
+
+            margin-bottom: 40px;
+        }
+
+        @include lg {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        @include xl {
+            &:first-of-type {
+                margin-top: 62px;
+            }
+        }
+
+
+    }
+}
