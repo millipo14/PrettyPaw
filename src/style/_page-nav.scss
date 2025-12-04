@@ -4,36 +4,37 @@
 
         @include lg {
             display: block;
-            // width: 192px;
-            // margin-top: 216px;
-            padding-left: 32px;
-            padding-right: 45px;
+            position: fixed;
+            top: 216px;
+            left: 30px;
         }
 
         @include xl {
-            padding-right: 115px; 
-            padding-left: 30px;
+            // padding-right: 115px;
+            // padding-left: 30px;
         }
 
-
         &--list {
-            @include lg {
-                font-weight: 1000;
-                font-size: 16px;
-                color: $second;
-            }
+            display: flex;
+            flex-direction: column;
+
+            font-weight: 1000;
+            font-size: 16px;
+            color: $second;
         }
 
         &--item {
-            @include lg {
-                &:not(:last-child) {
-                    margin-bottom: 24px;
-                }
-
-                &:hover {
-                    color: $main;
-                }
+            &:not(:last-child) {
+                margin-bottom: 24px;
             }
         }
+
+        &--link {
+            &_active {
+                color: $main;
+                pointer-events: none;
+            }
+        }
+
     }
 }

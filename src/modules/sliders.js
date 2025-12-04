@@ -12,6 +12,7 @@ const params = {
     slidesPerView: 1,
     pagination: {
         el: '.slider-pagination',
+        enabled: true,
     },
     modules: [Autoplay, Pagination]
 };
